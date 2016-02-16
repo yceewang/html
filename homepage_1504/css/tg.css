@@ -1,0 +1,141 @@
+@charset "utf-8";
+/* CSS Document */
+.ad{width: 1024px;
+margin: 0 auto;
+margin-bottom: 10px;}
+
+/* 
+---------------------------------
+Site:"团购"
+Author:Yichen Wang
+Updated:20150423
+Updated by:Yichen Wang
+--------------------------------- 
+*/
+/*=====面包屑开始=====*/
+.breadNav{margin:10px auto;width:1024px;border:1px solid #dfe2e9;height:44px;background:#fff;line-height:45px;color:#333;}
+.breadNav span{margin-left:20px;font-weight:bold;}
+.breadNav a{padding:0 5px;color:#333;}
+.breadNav a:link .breadNav a:visited{color:#666;font-weight:bold;margin:0 5px;}
+.breadNav a:hover{color:red;font-weight:bold;}
+/*=====面包屑结束=====*/
+/*=====S 主要区域=====*/
+.main{width:1024px;margin:0 auto;}
+/*=====S 主要区域=====*/
+/*标题*/
+.h2Title{height:45px;line-height:45px;background:#f7f7f7;font-size:20px;font-family:"微软雅黑";border-bottom:2px solid #2d7bd3;font-weight:normal;}
+.h2Title i{border:2px solid #2d7bd3;width:0;height:12px;margin:auto 10px;}
+.h2Title .subtitle{font-size:12px;color:#6298ab;font-weight:normal;margin-left:10px;}
+.h2Title .more{font-size:14px;color:#666;font-weight:normal;padding-right:10px;}
+.noBg{background:none;}
+/*=====S 团购区域=====*/
+.section{width:1024px;margin:0 auto;background:#fff;border:1px solid #ced7ea;}
+.section:hover{box-shadow: inset 0 0 0 5px #e6e6ec;transition:all 0.3s ease;}
+.title{font-family:"微软雅黑";font-size:18px;margin-bottom:5px;color:#334555;}
+/*=====E 团购区域=====*/
+/*=====S 团购标签=====*/
+.label{color:#fff;margin-right:5px;font-family:"微软雅黑";font-size:14px;font-weight:normal;}
+.buyLabel{padding:0 10px;background-color:#ff0000;}
+.comingsoonLabel{padding:0 5px;background-color:#22ac38;}
+.finishLabel{padding:0 10px;background-color:#e1e1e1;color:#888;}
+/*=====E 团购标签=====*/
+/*=====S 团购区域顶部=====*/
+.layer_t{color:#666;margin:15px 20px 10px 20px;line-height:24px;border-bottom:1px solid #e4e4e4;}
+.productAdvantage{font-family:"宋体";font-size:12px;color:#999;}
+.productAdvantage_label{color:#666;font-weight:bold;}
+.groupbuying_price{margin:20px 10px 0 0;font-family:"宋体";font-weight:bold;}
+.groupbuying_price p{color:#334555;font-size:12px;line-height:36px;}
+.groupbuying_price p span{font-family:"Arial";font-size:36px;color:#e61616;padding:0 10px;}
+/*=====E 团购区域顶部=====*/
+/*=====S 团购详细列表=====*/
+.description{padding:10px 10px 10px 20px;}
+.description ul{float:left;margin-right:10px;}
+.description li{margin-bottom:10px;font-weight:normal;color:#666;font-size:12px;}
+.descriptionNumber{padding-right:2px;color:#ff7055;font-weight:bold;}
+.descriptionText{color:#334555;font-size:14px;}
+/*=====E 团购详细列表=====*/
+/*=====S 进度条=====*/
+.progressBar{
+	position:relative;margin:5px 0 10px 0;width:100%;height: 15px;background-color:#ffc000;/*fallback for non-CSS3 browsers*/
+    background:-webkit-gradient(linear, 0 0, 0 right, from(#ffc000), to(#dd2525));/*old webkit*/
+    background:-webkit-linear-gradient(left, #ffc000, #dd2525);/*new webkit*/
+    background:-moz-linear-gradient(left, #ffc000, #dd2525);/*gecko*/
+    background: -ms-linear-gradient(left, #ffc000, #dd2525);/*IE10*/
+    background: -o-linear-gradient(left, #ffc000, #dd2525);/*opera 11.10+*/
+    background:linear-gradient(left, #ffc000, #dd2525);/*future CSS3 browsers*/
+    -pie-background:linear-gradient(left, #ffc000, #dd2525);/*PIE*/
+    behavior:url(pie/pie.htc);
+}
+/*20150429调整*/.progress {
+display:inline-block;*zoom:1;height:17px;margin:-1px 0 1px 2px;_margin:0 0 0 2px;background-color: #e9e9e9;position:relative;width:20%;/* = 产品剩余占比= */left:80%;/* = 产品实际占比= */behavior:url(pie/pie.htc);}
+/*20150429调整*/.progress0{
+display:inline-block;*zoom:1;height:17px;margin:-1px 0 1px 0px;_margin:0 0 0 0px;background-color: #e9e9e9;position:relative;width:100%;/* = 产品剩余占比= */left:0%;/* = 产品实际占比= */behavior:url(pie/pie.htc);}/*团购数量为0*/
+.progressText{position:absolute;left:40%;color:#333;font-size:12px;line-height:15px;}
+/*=====E 进度条=====*/
+/*=====S 团购剩余时间=====*/
+.groupbuying_time{background:url("../images/timeIcon.png") no-repeat 5px;padding-left:15px;}
+.groupbuying_time p{display:inline;padding-left:10px;}
+.groupbuying_time_distribute{margin:20px 0 0 160px;_margin:20px 0 0 120px;}
+/*=====E 团购剩余时间=====*/
+/*=====S 按钮=====*/
+a.btn{display:block;width:100px;height:35px;line-height:35px;color:#fff;font-weight:bold;font-family:"微软雅黑";font-size:14px;text-align:center;border-radius:3px;cursor:pointer;}
+a.btn:hover{background:#1d394b;text-decoration:none;}
+a.buyingBtn{float:right;margin:20px 20px 5px 0;background:#ff0000;}
+a.viewBtn{background:#22ac38;margin:20px 20px 5px 0;}
+a.blueBtn{background:#00afeb;margin:0 20px 5px 0;}
+/*=====E 按钮=====*/
+
+/*=====S 帮你团区域=====*/
+.demand_description{padding:10px 10px 10px 0;}
+.demand_description ul li{float:left;margin-right:10px;}
+.width375{width:375px;*width:395px;}/*20150429调整*/
+.width200{width:200px;}
+.width160{width:160px;}
+.width100{width:100px;}
+.margintop15{margin-top:15px;}
+.demand_layer_t{color:#666;line-height:24px;}
+.want, .demandClosed, .demandOpened{margin:20px 10px 0 20px;_margin:20px 0 0 10px;}
+.want{float:right;}
+.demandClosed{width:820px;float:left;}
+.demandOpened{width:820px;}
+a.share{display:inline-block;*zoom:1;margin:5px 0 0 25px;width:52px;height:16px;background:url("../images/shareimg.png") no-repeat;}
+a.share:hover{background:url("../images/shareimghover.png") no-repeat;}
+.shareIcon{}
+.demandForm{position:relative;padding:20px 30px 0 30px;border-top:5px solid #ced7ea;height:180px;background:url("../images/formbg.png") repeat;color:#666;}
+.section:hover .demandForm{box-shadow: inset 0 0 0 5px #e6e6ec; transition:all 0.3s ease;}
+input{height:20px;line-height:20px;outline:none;border:1px solid #b8c1c9;margin:0 5px;}
+input:focus{border-color:#00afeb;}
+.inputWidth120 input{width:120px;}
+.inputWidth80 input{width:80px;}
+.inputWidth100 input{width:100px;}
+.form span{margin-right:66px;}
+.form .last{margin-right:0;}
+.date{background:url("../images/date.png") right no-repeat #fff;}
+textarea{margin:10px 0 5px 10px;width:898px;height:45px;padding:5px;outline:none;border:1px solid #b8c1c9;}
+textarea:focus{border-color:#00afeb;}
+.wordLimited{text-align:right;padding-right:5px;color:#999;line-height:12px;}
+.name{letter-spacing:8px;}
+.submit a{margin:0 auto;}
+a.close{position: absolute;right:30px;top: -30px;background: url("../images/up.png") 18px 8px no-repeat #ced7ea;width: 80px;padding: 3px 0 3px 20px;color: #8997b4;letter-spacing: 8px;text-align: center;}
+a.close:hover{background:url("../images/uphover.png") 15px 7px no-repeat #ced7ea;text-decoration:none;color:#2d7bd3;}
+/*=====E 帮你团区域=====*/
+/*=====S 灰色背景=====*/
+.greyColumn{background:#f7f7f7;}
+/*=====E 灰色背景=====*/
+/*撮合产品*/
+.product{margin:10px auto;}
+.product li{float:left;padding:10px 0;}
+.productList{width:246px;_width:218px;height:280px;}
+.productList .title{width:246px;line-height:35px;padding:0 10px;_padding:0px;}
+.productListLine{width:10px;height:275px;_width:5px;}
+.tag{display:inline-block;border-bottom:1px solid #ced7ea;width:238px;padding:5px 4px;}
+.tag i{padding:5px;margin:0 2px;_margin:0 2px;background:#d9e8f1;font-style:normal;}
+.tag i.hotTag{background:#1398f5;color:#fff;}
+.productData{color:#666;width:100%; padding:0 15px;}
+.productData li{clear:both;width:100%;}
+.productPrice{padding:0 10px;color:#f06135;font-size:14px;font-family:"微软雅黑";line-height:40px;}
+.productPrice strong{font-size:24px;}
+.productTotal{color:#999;margin-right:10px;}
+.productTotal strong{color:#1398f5;font-size:14px;font-family:"微软雅黑";line-height:40px;}
+.productList:hover{box-shadow: inset 0 0 0 5px #e6e6ec;transition:all 0.3s ease;}
+a.productBtn{margin:0px 20px;_margin:0 10px;}
