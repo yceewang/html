@@ -1,0 +1,415 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>用户中心</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link href="css/public.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/publicpart.css" rel="stylesheet" type="text/css" media="all" /><!--包含头部、底部、右侧通栏浮动的样式-->
+<link href="css/newlogistics.css" rel="stylesheet" type="text/css" />
+<script src="js/jquery-1.9.0.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(function() {
+       var zIndexNumber = 1000;
+       $("div").each(function() {
+               $(this).css('zIndex', zIndexNumber);
+               zIndexNumber -= 10;
+       });
+});
+</script>
+</head>
+<body>
+<!-- header_t s -->
+  <div class="header_t">
+    <div class="wrapper">
+      <div class="fl login" style="display:none;">欢迎<a class="loadTxt" href="#">登录</a><a class="registerTxt" href="#">注册</a></div>
+      <div class="fl login logined">您好，<a class="loadTxt" href="#">东煤交易</a><a class="registerTxt" href="#">退出</a></div>
+      <div class="fr header_r"><a href="#" target="_blank" class="fl">回到东煤首页</a><a href="#" target="_blank" class="fl">我的平台</a><i class="headerTel fl"></i><p class="fr"><a href="#" class="weibo" target="_blank"></a><a href="#" class="wechat" target="_blank"></a></p></div>
+    </div>
+  </div>
+  <!-- header_t e -->
+   <!-- header_b s -->
+  <div class="header_b cf">
+  <div class="wrapper cf">
+    <img class="fl logo" src="images/logo.jpg" width="285" height="48">
+    <!--E 用户中心导航-->
+    <div class="nav fr cf">
+      <ul>
+        <li class="currentNavMenu"><a class="navItem" href="#">首页</a><i class="nav_line "></i></li>
+        <li>
+        <a class="navItem" href="#">账户管理<span class="downarrow"></span></a><i class="nav_line"></i>
+          <div class="subHeaderBox">
+          <span class="current"></span>
+          <ul class="subHeaderNav">
+            <li><a href="#">修改密码</a></li>
+           <li><a href="#">手机绑定</a></li>
+           <li><a href="#">邮箱锁定</a></li>
+          </ul>
+          </div>
+        </li>
+        
+        <li><a class="navItem" href="#">用户信息</a><i class="nav_line "></i></li>
+       <li><a class="navItem" href="#">应用管理</a><i class="nav_line "></i></li>
+        <li><a class="navItem" href="#">消息中心<span class="infoNumber">3</span></a></i></li>
+      </ul>
+    </div>
+    <!--S 用户中心导航-->
+    </div>
+</div>
+<!-- header_b e -->
+<!--E header-->
+<div class="main cf">
+<!--s 左侧-->
+  <div class="main_l fl">
+      <!--s 左侧导航栏-->
+        <div class="subNavBox">
+          
+          <div>
+          <a href="#" class="subNav noAdd">团购<i class="closeArrow"></i></a>
+            <ul class="navContent">
+                  <li class="currentItem"><a href="#"><i></i>团购发售管理</a></li>
+                  <li><a href="#"><i></i>团购商品管理</a></li>
+                  <li><a href="#"><i></i>团购申购管理</a></li>
+            </ul>
+          </div>
+          <div>
+           <a href="#" class="subNav">撮合</a>
+            <ul class="navContent hidden">
+                  <li><a href="#"><i></i>撮合发售管理</a></li>
+                  <li><a href="#"><i></i>撮合商品管理</a></li>
+                  <li><a href="#"><i></i>申购订单查询</a></li>
+                  <li><a href="#"><i></i>发售记录查询</a></li>
+            </ul>
+          </div>          
+          <a href="#" class="subNav">我的订单</a>
+        </div>
+    <!--E 左侧导航栏-->
+    <!--s 东煤客服-->
+    <div class="service">
+    <div class="label"><p>服务时间<span>9:00-17:00</span></p></div>
+    <div class="consult"><img src="images/icon8.jpg" width="76" height="57"></div>
+    <p class="consultTitle">在线咨询</p>
+    <p class="smallTitle">在线为您实时解决问题</p>
+    <div class="hotline"><img src="images/icon9.jpg" width="64" height="41"></div>
+    <p class="smallTitle">服务热线：</p>
+    <p class="hotline_text">400-837-7771</p>
+    </div>
+    <!--E 东煤客服-->
+  </div>
+  <!--E 左侧-->
+  <!--请开发判断左右两侧高度，两侧高度保持一致-->
+<!--S main_r-->	
+	<div class="main_r fl">
+      <div class="mainContent mb20 cf">
+      <div class="logisticsTitle">
+        <span><i>交易订单号：</i>WG326846513216</span><span><i>委托方：</i>委托方名称占位名称占位</span>
+        <span><i>交易买方：</i>交易买方名称占位名称占位</span><span><i>交易卖方：</i>交易卖方名称占位名称占位</span>
+      </div>
+      <!--S tab按钮-->
+      <div class="tabMenu">
+        <a href="#" class="tabMenuoff cur fl">物流委托一</a><a href="#" class="tabMenuoff tabMenuon fl">物流委托二</a><span class="fr btn_dark"><a href="#">新增委托物流</a></span>
+      </div>
+      <!--E tab按钮-->
+      <!--S 数据表格-->
+        <div class="tabBg">
+          <table border="0" cellspacing="0" cellpadding="0" class="viewTable">
+            <tr class="lineTr">
+              <td class="tableField">委托物流单号：WD201404150001</td>
+              <td></td>
+              <td class="tableField">委托物流单号：WD201404150001</td>
+              <td colspan="2"></td>
+            </tr>
+            <tr class="lineTr">
+              <td class="tableField">物流委托合同：WH201404150001<a href="#" class="payBth">查看合同</a></td>
+              <td ></td>
+              <td class="tableField">物流状态：<i class="color38ab19">在途或已收货</i></td>
+              <td colspan="2" ></td>
+            </tr>
+            <tr class="lineTr">
+              <td class="tableField">订单数量：10000 吨</td>
+              <td ></td>
+              <td class="tableField">委托数量：10000 吨</td>
+              <td colspan="2"></td>
+            </tr>
+            <tr class="lineTr">
+              <td class="tableField">委托发运地：大连湾港</td>
+              <td ></td>
+              <td class="tableField">委托运抵地：南京港</td>
+              <td colspan="2"></td>
+            </tr>
+            <tr class="lineTr">
+              <td class="tableField">计划始发日期：2015-04-15</td>
+              <td ></td>
+              <td class="tableField">计划运抵日期：2015-04-15</td>
+              <td colspan="2"></td>
+            </tr>
+            <tr class="lineTr">
+              <td class="tableField">实际始发日期：2015-04-15</td>
+              <td ></td>
+              <td  class="tableField">实际运抵日期：2015-04-15<a href="#" class="setIco">结算信息</a></td>
+              <td ></td>
+              <td ></td>
+            </tr>
+            
+            <tr class="lineTrline">
+              <td  class="tableField">合同运费单价：999.00</td>
+              <td ></td>
+              <td  class="tableField">合同运费金额：200,000.00<span class="setIco">是否结算：<strong class="colorRed">已结算</strong></span></td>
+              <td ></td>
+              <td ></td>
+            </tr>
+            <tr class="lineTr">
+              <td class="tableField">结算运费单价：999.00</td>
+              <td ></td>
+              <td class="tableField">结算运费金额：200,000.00</td>
+              <td colspan="2"></td>
+            </tr>
+          </table>
+        </div>
+      <!--E 数据表格-->
+      
+     <!--S 运输区域-->
+    <div class="transportSection">
+      <!--S 大节点-->
+      <div class="bigNode">
+      <span class="currentTitle ellipsis" title="铁法站铁法站铁法站铁法站铁法站铁法站">铁法站铁法站铁法站铁法站铁法站铁法站</span><span class="currentDot">●</span>
+      <a class="currentText" href="#">已完成：港口卸货入库<span class="arrow">▼</span></a>
+      </div>
+      <!--E 大节点-->
+      <!--S 小节点-->
+      <div class="smallNode">
+        <i class="transportIcon currentTrainIcon"></i>
+        <div class="currentTransport">
+        <!--S 节点-->
+        <div class="node">汽运在途监控
+        <!--S 传输信息下拉-->
+        <div class="transitInfo" style="display:none;">
+        <i class="uparrow"></i>
+        <a href="" class="close">关闭</a>
+
+  <table width="620" border="0" cellspacing="0" cellpadding="0" class="transitInfoTable">
+  <tr>
+    <td width="15%" class="t_r">报告日期：</td>
+    <td width="19%">2015-04-15</td>
+    <td width="14%" class="t_r">计划抵达日期：</td>
+    <td width="19%">2015-04-15</td>
+    <td width="14%" class="t_r">途径地点：</td>
+    <td width="19%">皮口</td>
+  </tr>
+   <tr>
+    <td class="t_r">发运数量：</td>
+    <td>10009吨</td>
+    <td class="t_r">车牌号码：</td>
+    <td colspan="3">辽B 1111\辽B 1112</td>
+  </tr>
+  <tr>
+    <td class="t_r">备注：</td>
+    <td colspan="5">此人很懒没写备注</td>
+  </tr>
+  </table>
+        </div>
+        <!--E 传输信息下拉-->
+        </div>
+        <!--E 节点-->
+        <!--S 节点-->
+        <div class="node">汽运在途监控</div><!--E 节点--> 
+         
+        </div>
+      </div>
+      <!--E 小节点-->
+
+      <!--S 大节点-->
+      <div class="bigNode">
+      <span class="currentTitle ellipsis" title="大连湾港">大连湾港</span><span class="currentDot">●</span>
+      <a class="currentText" href="#">已完成：港口卸货入库<span class="arrow">▼</span></a>
+       <!--S 结算信息下拉-->
+        <div class="settlementInfo" style="display:none;">
+        <i class="uparrow"></i>
+          <div class="settlementInfoHeader cf">
+            <span class="currentTab">物流信息</span><span class="tab">质量信息</span><a href="" class="close">关闭</a>
+          </div>
+  <table width="620" border="0" cellspacing="0" cellpadding="0" class="settlementInfoTable logisticsInfo">
+  <tr>
+    <td width="15%" class="t_r">发运日期：</td>
+    <td width="19%">2015-04-15</td>
+    <td width="14%" class="t_r">发运站：</td>
+    <td width="19%"> 大青站</td>
+    <td width="14%" class="t_r">目的地：</td>
+    <td width="19%">大连湾港</td>
+  </tr>
+   <tr>
+    <td class="t_r">发运数量：</td>
+    <td>10009吨</td>
+    <td class="t_r">保险公司：</td>
+    <td>平安保险大连分公司</td>
+    <td class="t_r">铁路大票号：</td>
+    <td>S10078p/S10020pS10020p</td>
+  </tr>
+  <tr>
+    <td class="t_r">备注：</td>
+    <td colspan="5">备注文字占位</td>
+  </tr>
+  <tr>
+    <td class="t_r">查看附件：</td>
+    <td colspan="5"><a href="">铁路大票</a><a href="">铁法站过磅单</a><a href="">铁法站杂费收据</a></td>
+  </tr>
+  </table>
+
+  <table width="620" border="0" cellspacing="0" cellpadding="0" class="settlementInfoTable qualityInfo">
+  <tr>
+    <td width="20%" class="t_r">发热量(Qnet,ar)：</td>
+    <td width="16%"> 5000 Kcal/kg</td>
+    <td width="16%" class="t_r">挥发份(V)：</td>
+    <td width="16%"> 10 %</td>
+    <td width="16%" class="t_r">全硫(St)：</td>
+    <td width="16%">&lt; 0.5 %</td>
+  </tr>
+   <tr>
+    <td class="t_r">灰分(A)：</td>
+    <td> 10 %</td>
+    <td class="t_r">内水(Mad)：</td>
+    <td>&nbsp;</td>
+    <td class="t_r">全水分(Mt)：</td>
+    <td>&lt; 10 %</td>
+  </tr>
+   <tr>
+    <td class="t_r">产地：</td>
+    <td>&nbsp;</td>
+     <td class="t_r">焦渣特性(CRC)：</td>
+    <td>&nbsp;</td>
+    <td class="t_r">粒度(Φ)：</td>
+    <td>&nbsp;</td>
+  </tr>
+   <tr>
+    <td class="t_r">可磨系数(HGI)：</td>
+    <td>&nbsp;</td>
+    <td class="t_r">粘结指数(G)：</td>
+    <td>&nbsp;</td>
+    <td class="t_r">灰熔点(AFT)：</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="t_r">固定碳(FC)：</td>
+    <td>&nbsp;</td>
+    <td class="t_r">胶质层厚度(Y)：</td>
+    <td>&nbsp;</td>
+    <td class="t_r">机械强度：</td>
+    <td>&nbsp;</td>
+  </tr>
+   <tr>
+    <td class="t_r">质检机构：</td>
+    <td>xxxx有限公司</td>
+    <td  class="t_r">检验时间：</td>
+    <td>2015-05-08</td>
+    <td class="t_r">采样地点：</td>
+    <td>大连湾港</td>
+  </tr>
+</table>
+        </div>
+        <!--E 结算信息下拉-->
+      </div>
+      <!--E 大节点-->
+      <!--S 小节点-->
+      <div class="smallNode">
+        <i class="transportIcon shipIcon"></i>
+        <div class="transport">
+       <a class="currentText text">计划：海运装运出库<span class="arrow">▼</span></a>
+        <!--S 结算信息下拉-->
+        <div class="settlementInfo">
+        <i class="uparrow"></i>
+          <div class="settlementInfoHeader cf">
+            <span class="currentTab">物流信息</span><span class="tab">质量信息</span><a href="" class="close">关闭</a>
+          </div>
+  		
+         <div class="settlementInfoTable logisticsInfo cf">
+          <ul>
+            <li class="item"><span class="title">报告日期报告日期：</span><span class="content">2015-04-152015-04-152015-04-15</span></li>
+            <li class="item"><span class="title">报告日期：</span><span class="content">2015-04-15</span></li>
+            <li class="item"><span class="title">报告日期：</span><span class="content">2015-04-15</span></li>
+            <li class="item"><span class="title">报告日期：</span><span class="content">2015-04-15</span></li>
+            <li class="item"><span class="title">铁路大票号：</span><span class="content">S10078p/S10020pS10020p</span></li>
+            <li class="fullItem"><span class="title">备注：</span><span class="content">文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字</span></li>
+            <li class="fullItem"><span class="title">查看附件：</span><span class="content"><a href="">铁路大票</a><a href="">铁法站过磅单</a><a href="">铁法站杂费收据</a></span></li>
+          </ul>
+          </div>
+
+           <div class="settlementInfoTable qualityInfo cf">
+          <ul>
+            <li class="item"><span class="title">发热量(Qnet,ar)：</span><span class="content">5000 Kcal/kg</span></li>
+            <li class="item"><span class="title">挥发份(V)：</span><span class="content">10 %</span></li>
+            <li class="item"><span class="title">全硫(St)：</span><span class="content">&lt; 0.5 %</span></li>
+            <li class="item"><span class="title">灰分(A)：</span><span class="content">2015-04-15</span></li>
+            <li class="item"><span class="title">内水(Mad)：</span><span class="content">1%</span></li>
+            <li class="item"><span class="title">全水分(Mt)：</span><span class="content">1%</span></li>
+            <li class="item"><span class="title">产地：</span><span class="content"></span></li>
+            <li class="item"><span class="title">焦渣特性(CRC)：</span><span class="content"></span></li>
+            <li class="item"><span class="title">粒度(Φ)：</span><span class="content"></span></li>
+            <li class="item"><span class="title">可磨系数(HGI)：</span><span class="content"></span></li>
+            <li class="item"><span class="title">粘结指数(G)：</span><span class="content"></span></li>
+            <li class="item"><span class="title">灰熔点(AFT)：</span><span class="content"></span></li>
+            <li class="item"><span class="title">固定碳(FC)：</span><span class="content"></span></li>
+            <li class="item"><span class="title">胶质层厚度(Y)：</span><span class="content"></span></li>
+            <li class="item"><span class="title">机械强度：</span><span class="content"></span></li>
+            <li class="item"><span class="title">质检机构：</span><span class="content">xxxx有限公司</span></li>
+            <li class="item"><span class="title">检验时间：</span><span class="content">2015-05-08</span></li>
+            <li class="item"><span class="title">采样地点：</span><span class="content">大连湾港</span></li>
+          </ul>
+          </div>
+          
+        </div>
+        <!--E 结算信息下拉-->
+       <span class="emptySpace"></span>
+        </div>
+      </div>
+      <!--E 小节点-->
+
+      <!--S 大节点-->
+      <div class="bigNode">
+      <span class="title ellipsis" title="过驳">过驳</span><span class="dot">●</span>
+      <span class="text">计划：海运装运出库</span>
+      </div>
+      <!--E 大节点-->
+      <!--S 小节点-->
+      <div class="smallNode">
+        <i class="transportIcon vanIcon"></i>
+        <div class="transport">
+       <span class="emptySpace"></span>
+        </div>
+      </div>
+      <!--E 小节点-->
+       <!--S 大节点-->
+      <div class="bigNode">
+      <span class="title ellipsis" title="南昌港">南昌港</span><span class="dot">●</span>
+      <span class="text">计划：海运装运出库</span>
+      </div>
+      <!--E 大节点-->
+    </div>
+  <!--E 运输区域-->
+      
+      </div>
+    </div>
+  <!--E main_r-->
+</div>
+<!--s footer-->
+<div class="footer">
+  <div class="footer_b">
+    <ul>
+      <li><a href="#">关于我们</a><span>|</span></li>
+      <li><a href="#">帮助中心</a><span>|</span></li>
+      <li><a href="#">诚聘英才</a><span>|</span></li>
+      <li><a href="#">合作伙伴</a><span>|</span></li>
+      <li><a href="#">网站地图</a></li>
+    </ul>
+    <p><span>东北亚煤炭交易中心 版权所有</span><span>增值电信业务经营许可证编号：<a href="#">辽B-2-4-20110003</a></span><a href="#" class="footerlicp">辽ICP备12013188</a></p>
+    <ol>
+      <li><span>|</span><a href="#">法律声明</a></li>
+      <li><span>|</span><a href="#">服务条款</a></li>
+    </ol>
+  </div>
+  <div class="footer_img"><img src="images/footerimg.png" width="114" height="41"></div>
+</div>
+<!--E footer--> 
+</body>
+</html>
+</body>
+</html>

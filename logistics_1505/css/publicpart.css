@@ -1,0 +1,85 @@
+@charset "utf-8";
+/* CSS Document */
+.header_t{width:100%;background:#404243;height:30px;line-height:30px;}
+.login {margin-left:40px;color:#93999c;}
+.login a ,.header_r a{padding:0 10px;color:#dae3f4;}
+.header_r{width:500px;}
+.login a.loadTxt{color:#0b96f7;}
+.login a:hover,.header_r a:hover{color:#ff7055;}
+.headerTel,.ecoalLogo a{display:inline-block;width:226px;height:30px;vertical-align:middle;background:url(../images/icon.gif) no-repeat -62px 0px;}
+.weibo,.wechat{display:inline-block;width:30px;height:30px;background:url(../images/icon.gif) no-repeat;}
+.weibo{background-position:0 -33px;margin-left:10px;}
+.weibo:hover{background-position:0 -99px;}
+.wechat:hover{background-position:0 -66px;}
+.header_b{height:70px;background:#2d7bd3;border-bottom:1px solid #1459a6;}
+.logo{margin-top:10px;}
+/*导航*/
+.nav{background:#2d7bd3;height:70px;line-height:90px;_margin-top:-20px;}
+.nav li{float:left;width:110px;}
+.nav li a{display:inline-block;width:110px;text-align:center;color:#fff;text-decoration:none;font-size:16px;font-weight:bold;}
+a.navItem{_position:relative;_top:20px;}
+.nav .nav_line{	background:url("../images/nav_line.png") right center no-repeat;}
+.nav .downarrow{background:url("../images/downarrow.png") right center no-repeat;}
+.nav .infoNumber{display:inline-block;width:22px;height:90px;background:url("../images/infocenter.png") right center no-repeat;font-size:14px;font-weight:normal;position:relative;bottom:10px;}
+.subHeaderNav{position:absolute;top:101px;border-bottom:1px solid #2d7bd3;border-right:1px solid #2d7bd3;border-left:1px solid #2d7bd3;background:#fff;z-index:99;}
+.subHeaderNav li{float:none;height:35px;line-height:35px;width:110px;}
+.subHeaderNav li a{color:#2d7bd3;font-size:14px;}
+.subHeaderNav li:hover{background:#eff7fd;}
+.nav .current{display:block;width:15px;height:7px;background:url("../images/triangle.png") no-repeat;position:absolute;top:94px;margin-left:46px;}
+.currentNavMenu{background:url("../images/triangle.png") 46px 63px no-repeat;_background:url("../images/triangle.png") 46px 83px no-repeat;}
+/*===左侧导航栏 S===*/
+.main_l{width:190px;min-height:680px;border:3px solid #ced7ea;background:#f7f7f7;}
+.subNavBox{width:190px;}
+a.subNav{display:block;padding-left:20px;border-bottom: solid 1px #ced7ea;font-weight:bold;font-size:16px;color:#2d7bd3;height:35px;line-height:35px;font-family: "宋体";text-decoration:none;}
+a.subNav:hover{background-color:#2d7bd3;color:#fff;text-decoration:none;}
+a.noAdd:hover{background:none;color:#2d7bd3;}
+a.subNav i{float:right;_margin-bottom:-15px;position:relative;top:12px;*top:-23px;right:20px;display:inline-block;*zoom:1;width:12px;height:12px;background:url("../images/menuarrow.png") no-repeat;}
+a.subNav .closeArrow{background:url("../images/menuarrowclose.png") no-repeat;}
+.navContent{border-bottom:solid 1px #e6eaeb;}
+.navContent i,.navContent a:hover i{display:inline-block;width:6px;height:8px;*height:14px;background:url(../images/dot.png) no-repeat left center;padding-right:15px;}
+.navContent a{display:block;_padding:10px 0;padding-left:30px;height:35px;line-height:35px;_height:15px;_line-height:15px;font-size: 14px;color: #334b64;font-weight:normal; }
+.navContent a:hover{color:#334b64;background-color:#ced7ea;text-decoration:none;}
+.closeSubNav{background-position:193px -250px;}
+.currentItem a{background-color:#2d7bd3;color:#fff;}
+.currentItem a i{display:inline-block;width:6px;height:8px;*height:14px;background:url(../images/dothover.png) no-repeat left center;}
+/*===左侧导航栏 E===*/
+/*===东煤客服 S===*/
+.service{margin-top:45px;width:190px;color:#666;font-weight:bold;font-family:"微软雅黑";font-size:12px;}
+.label{display:table;margin-top:15px;white-space: nowrap;font-weight:bold;}
+.label:before, .label:after {border-top: 1px solid #eee;content: '';display: table-cell;position: relative;top: 10px;width: 45%;}
+.label p{background-color:#eee;-moz-border-radius:10px;-webkit-border-radius:10px;border-radius:10px;padding:0 10px;text-align:center;}
+.label p span{padding-left:5px;font-size:16px;}
+.consult{width:76px;margin:10px auto;}
+.consultTitle{color:#ff0000;font-size:16px;text-align:center;}
+.smallTitle{font-size:12px;text-align:center;}
+.hotline{width:64px;margin:10px auto;}
+.hotline_text{color:#f18404;font-size:18px;text-align:center;padding-bottom:10px;}
+/*===东煤客服 E===*/
+
+/*=====页面底部开始=====*/
+.footer{background:#2f3545;width:100%;height:150px;margin-top:20px;}
+.footerBox{background:#3f4658;width:100%;height:210px;}
+.footer_t{width:1024px;padding:20px 0;color:#fff;position:relative;margin:0 auto;}
+.footer_t ul li{float:left;width:100px;height:45px;line-height:45px; margin:0 30px;padding:0 10px;color:#fff;background:url(../images/lin.png) left bottom no-repeat;font-family:Microsoft YaHei;font-size:16px;font-weight:normal;}
+.footer_t ol{float:left; width:120px;line-height:30px;margin:30px;}
+.footer_t ol li a:link,.footer_t ol li a:visited,.footer_t ol li a{color:#fff;text-decoration:none;font-family:Microsoft YaHei;font-size:12px;font-weight:normal;}
+.footer_t ol li a:hover{color:#f60;}
+.footerCode{width:106px;text-align:center;position:absolute;right:0px; top:53px;}
+.footerCode a:link,.footerCode a:visited{display:block; overflow:hidden;border-radius:5px;font-family:Microsoft YaHei; background:#2f3545; width:106px; height:26px; line-height:26px; text-align:center; color:#fff; text-decoration:none; margin:10px 0;}
+.footerCode a:hover{background:#07163D;transition:all 0.5s;}
+.footer_b{width:1024px; padding:5px 0; color:#fff; margin:0 auto;}
+.footer_b ul{width:710px; margin:0 auto;}
+.footer_b ul li{height:45px; line-height:45px; color:#fff; float:left; font-family:Microsoft YaHei; font-size:14px; cursor:pointer;}
+.footer_b ul li a:link, .footer_b ul li a:visited,.footer_b ul li a{ color:#fff; text-decoration:none;}
+.footer_b ul li span{padding:0 35px;}
+.footer_b p{width:670px; float:left; height:30px; line-height:30px; padding-left:20px;}
+.footer_b p span{float:left; font-family:Microsoft YaHei; font-size:12px; margin:0 20px;}
+.footer_b ol{width:315px; float:left;}
+.footer_b ol li{height:30px; line-height:30px; color:#fff; float:left; font-family:Microsoft YaHei; font-size:12px; cursor:pointer;}
+.footerlicp{margin:0 0 0 20px;}
+.footer_b p a:link,.footer_b p a:visited,.footer_b p span a:link,.footer_b p span a:visited,.footer_b ol li a:link,.footer_b ol li a:visited,.footer_b ol li a{ color:#fff; text-decoration:none;}
+.footer_b ol li span{padding:0 26px;}
+.footer_b ol li a:hover,.footer_b p a:hover,.footerCont2 p span a:hover,.footer_b ul li a:hover,.footercont_t ol li a:hover{color:#f06135;}
+.footer_img{width:114px;margin:0 auto;}
+.footer_img img{margin-top:10px;}
+/*=====页面底部结束=====*/

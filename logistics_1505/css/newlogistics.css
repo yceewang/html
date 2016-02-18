@@ -1,0 +1,87 @@
+@charset "UTF-8";
+/*物流头*/
+.logisticsTitle{ width:770px; border:1px solid #dde4f2; background:#f2f6ff; color:#000; margin-top:20px;}
+.logisticsTitle span{ display: inline-block;width:365px; font-size:14px;line-height:40px; padding-left:20px;}
+.logisticsTitle i{ display: inline-block;font-style: normal; font-size:12px; text-align:right;}
+.tabMenu{height:38px;line-height:38px;font-family:"微软雅黑";border-bottom:2px solid #2d7bd3;font-weight:normal; margin-top:15px;background:#f9f9f9;}
+.tabMenuoff,.tabMenuon{ display: inline-block;width:115px; text-align:center;}
+a.tabMenuoff,a.tabMenuon{ color:#666;font-size:14px;}
+.cur{text-decoration: none;border:1px solid #2d7bd3;border-bottom:none;background:#fff;color:#2d7bd3!important;position:relative;top:1px;}
+.tabMenu a.tabMenuoff:hover{color:#2d7bd3!important;text-decoration:underline;}
+.btn_dark a{display:block;float:right;width:123px;height:40px;line-height:40px;text-align:center;font-size:14px;color:#fff;background:#ff9933;text-decoration:none;font-family:"宋体";}
+.btn_dark a:hover{text-decoration:none;background:#1d394b;color:#fff;}
+
+.tabBg{ width:770px;border:1px solid #dde4f2; background:#f2f6ff; margin-top:15px;}
+.viewTable{font-family:"宋体";font-size:12px;color:#365374;text-align:left;width:100%; margin:10px 0;}
+.lineTr,.lineTrline{height:35px;line-height:35px;}
+.lineTr td{padding-left:25px;color:#666;}
+.lineTr td i.color38ab19{color:#38ab19;font-weight:bold;font-style:normal;}
+.tableField{text-align:left;color:#666; font-size:12px;}
+a.payBth{ margin-left:10px; display: inline-block; padding:0 6px; line-height:24px; background:#8dbe53;font-style: normal; color:#fff;border-radius:5px; font-size:12px;}
+a.payBth:hover{ color:#fff;text-decoration: underline;}
+.lineTrline td{ border-top:1px solid #efeded;padding-left:25px;}
+a.setIco{ font-size:12px; color:#2d7bd3; background:url(../images/settIco.png) right center no-repeat; padding-right:15px;}
+.setIco{position:relative;left:125px;}
+.setIco .colorRed{ color:#F00;}
+/*运输区域*/
+.transportSection{width:772px; margin:20px auto;}
+.bigNode{position:relative;font-family:"微软雅黑";font-size:14px;font-weight:bold;}
+.title{display:inline-block;width:130px;color:#999;text-align:right;line-height:14px;}
+.currentTitle{display:inline-block;width:130px;color:#2d7bd3;text-align:right;line-height:14px;}
+
+.dot{color:#999;font-size:20px;padding-left:12px;padding-right:6px;}
+.currentDot{position:relative;top:2px;color:#ff6000;font-size:34px;padding-left:7px;}
+.arrow{font-size:14px;color:#999;padding-left:3px;}
+a:hover{text-decoration:none;}
+a.currentText{color:#2d7bd3;padding-left:11px;}
+a.text{font-family:"微软雅黑";font-size:14px;font-weight:bold;padding-left:10px;color:#999;}
+.smallNode{position:relative;}
+.smallNode .text{padding-left:24px;}
+.emptySpace{display:block;height:90px;}
+/*运输Icon start*/
+.transportIcon{background:url("../images/transport.png") no-repeat;width:130px;height:16px;position:absolute;top:45%;left:0;_top:10%;_left:-140px;}
+.trainIcon{background-position:95px 0px;}
+.currentTrainIcon{background-position:95px -76px;}
+.shipIcon{background-position:95px -26px;}
+.currentShipIcon{background-position:95px -102px;}
+.vanIcon{background-position:95px -49px;}
+.currentVanIcon{background-position:95px -125px;}
+/*运输Icon end*/
+.transport{margin-left:146px;border-left:4px solid #ced7ea;padding-top:10px;padding-bottom:10px;}
+.currentTransport{margin-left:146px;border-left:4px solid #2d7bd3;padding-top:10px;padding-bottom:10px;}
+.node{position:relative;color:#666;font-family:"宋体";font-size:12px;background:url("../images/transport.png") 25px -142px no-repeat;padding:8px 0 10px 45px;}
+/*结算信息下拉 start*/
+.settlementInfo{position:absolute;top:45px;left:160px;background:#f2f6ff;border:2px solid #b8c5e0;width:620px;}
+.settlementInfo tr{height:25px;}
+.settlementInfo .uparrow{position:absolute;top:-9px;left:100px;width:23px;height:9px;background: url("../images/uparrow.png") no-repeat;}
+.settlementInfo a{color:#2d7bd3;}
+.settlementInfo a:hover{color:#ff6000;text-decoration:underline;}
+.settlementInfoHeader{padding:3px 0;_padding:7px 0;margin:5px 10px;border-bottom:1px solid #1459a6;}
+.currentTab{font-size:14px;font-family:"宋体";font-weight:bold;color:#ff6000;border-bottom:3px solid #ff6000;padding:10px 15px 7px 15px;cursor:pointer;}
+.tab{font-size:14px;font-family:"宋体";font-weight:bold;color:#999;padding:10px 15px 5px 15px;cursor:pointer;}
+.settlementInfo a.close{font-size:12px;font-family:"宋体";font-weight:normal;float:right;margin-right:5px;*float:none;*margin-left:370px;}
+.settlementInfoTable{width:620px;font-size:12px;font-family:"宋体";font-weight:normal;color:#888;margin:20px 0 20px 10px;}
+.settlementInfoTable .item{float:left;width:200px;}
+.settlementInfoTable .item .title{text-align:right;width:110px;}
+.settlementInfoTable .item .content{width:90px;}
+.settlementInfoTable .fullItem{float:left;width:600px;}
+.settlementInfoTable .fullItem .title{text-align:right;width:110px;}
+.settlementInfoTable .fullItem .content{width:490px;}
+.settlementInfoTable li span{display:inline-block;height:22px;line-height:22px;overflow:hidden; white-space:nowrap;text-overflow:ellipsis;}
+.settlementInfoTable a{padding-right:20px;}
+/*结算信息下拉 end**/
+
+/*传输信息下拉 start*/
+.transitInfo{position:absolute;top:40px;left:10px;background:#ebf6e6;border:1px solid #ced7ea;width:620px;}
+.transitInfo tr{height:28px;}
+.transitInfo .uparrow{position:absolute;top:-8px;left:60px;width:22px;height:8px;background: url("../images/uparrow_green.png") no-repeat;}
+.transitInfo a{color:#2d7bd3;}
+.transitInfo a:hover{color:#ff6000;text-decoration:underline;}
+.transitInfoTable{font-size:12px;font-family:"宋体";font-weight:normal;color:#888;margin-bottom:10px;table-layout:fixed;}
+.transitInfoTable td{overflow:hidden; white-space:nowrap;text-overflow:ellipsis;}
+.transitInfoTable a{padding-right:20px;}
+/*传输信息下拉 end*/
+
+
+
+

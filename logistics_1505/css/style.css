@@ -1,0 +1,67 @@
+@charset "UTF-8";
+/* 
+---------------------------------
+Site: "东煤社区"
+Author: Alice
+Updated: 20150507
+Updated by: Alice
+---------------------------------
+*/
+.more a.logistics{color:#2d7bd3;}
+/*新增委托表单*/
+.addLogistics{margin:20px auto;}
+.inputTitle{color:#666;font-weight:normal;}
+.addLogistics input{width:180px;height:28px;line-height:28px;border: 1px solid #ccc;border-radius:3px;-webkit-border-radius:3px;-moz-border-radius:3px;-o-border-radius:3px;color: #333;padding-left:5px;margin:8px 10px 8px 5px;}
+.addLogistics input:hover{outline:none;border-color:#2d7bd3;}
+.addLogistics input.noEditable{background:#f7f7f7;cursor:auto;color:#999;}
+.addLogistics input.noEditable:hover{border:1px solid #ccc;}
+.addLogistics input.adress{width:568px;}
+.addLogistics input.note{width:568px;height:60px;}
+.addLogistics input.weight{width:135px;}
+/*煤炭指标*/
+.indicator_ul{font-family:"宋体";font-size:12px;color:#666;text-align:left;margin-top:15px;margin-bottom:15px;border-right: 1px solid #eee;border-top: 1px solid #eee;width:772px;margin:15px auto;}/*表格 s*/
+.indicator_li{float:left;height:35px;line-height:35px;background-color:#fff;border-bottom:1px solid #eee;border-left:1px solid #eee;}
+.indicator_li span{padding-left:5px;}
+.indicator_li span i{font-style:normal;}
+.indicator_title{display:inline-block;width:189px;background-color:#f9fcfe;text-align:right;padding-right:10px;border-right: 1px solid #eee;}
+.indicator_content{display:inline-block;width:175px;}
+.indicator_full{width:771px;}
+
+.hintInput{position:relative;}
+.hint{background:url("../images/hint.png") left 10px no-repeat;padding-left:20px;line-height:32px;color:#999;position:absolute;top:34px;left:8px;}
+/*弹出框 start*/
+.popup {z-index:99;overflow: hidden;position:fixed;left:0;top:0; width:100%;height:100%;background-color: #333;filter: Alpha(Opacity=70);opacity: 0.7;}
+.boxShadow{} 
+.popupContent{position: absolute; background: #fff;z-index: 101; overflow: auto;}
+.size{top: 50%;left: 50%;width: 500px; height: 240px; margin-left:-250px; margin-top:-105px;}
+.smallSize{height:180px;}
+.popupTitle{ width:97%; height:40px; line-height:40px; font-size:16px; font-family:"微软雅黑"; background:#2d7bd3; color:#fff; padding-left:3%;}
+a.close{ display:block; overflow:hidden; width:40px; height:40px; background:url(../images/close.png) no-repeat; }
+a.close:hover{ background:url(../images/closeHover.png) no-repeat;}
+.popupSt{ margin:20px auto 0 auto; width:90%;}
+.popupTxt span{margin:15px;}
+.rightTxt_tit{ padding-left:50px;width:220px;margin:auto;height:50px;line-height:50px;font-size:24px;font-family:"微软雅黑"; color:#666;background: url(../images/ok.png) center left no-repeat}
+.rightTxt{height:40px;line-height:40px;font-size:18px;font-family:"微软雅黑"; color:#666;}
+.rightTel{ color:#F00; font-size:16px;}
+.mt20{ margin-top:20px;}
+.operate a{display:inline-block;padding:5px 40px;margin:15px 20px;background:#32a1e6;color:#fff; text-decoration:none;}
+.operate a:hover{background:#1d394b;}
+.operate a.cancel{background:#999;}
+.operate a.cancel:hover{background:#666;}
+/*弹出框 end*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

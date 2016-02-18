@@ -1,0 +1,42 @@
+@charset "UTF-8";
+/*物流头*/
+.logisticsTitle{ width:770px; border:1px solid #dde4f2; background:#f2f6ff; color:#000; margin-top:20px;}
+.logisticsTitle span{ display: inline-block;width:365px; font-size:14px;line-height:40px; padding-left:20px;}
+.logisticsTitle i{ display: inline-block;font-style: normal; font-size:12px; text-align:left;}
+/*标题*/
+.viewtitle{height:53px;line-height:53px;border-bottom:1px solid #eee;background:#f9f9f9;}
+.viewtitle ul{width:300px;float:left;margin-left:25px;}
+.viewtitle ul li{float:left;width:115px;height:53px;}
+.viewtitle ul li a{display:block;font-size:18px;color:#666;text-align:center;text-decoration:none;font-family:"微软雅黑";}
+.viewtitle ul li a.cur{border:1px solid #eee;border-bottom:none;font-weight:bold;background:#fff;color:#2d7bd3;}
+.viewtitle ul li a:hover{color:#2d7bd3;text-decoration:none;}
+.viewtitle a.viewtitlebut{display:block;float:right;width:123px;height:53px;line-height:53px;text-align:center;font-size:14px;color:#fff;background:#ff9933;text-decoration:none;font-family:"宋体";}
+.viewtitle a.viewtitlebut:hover{background:#1d394b;}
+/*物流委托*/
+a.logisticsEntrust{text-decoration:none;}
+.logisticsEntrust{width:377px;border:1px solid #e3e7e8;margin-right:14px;cursor:pointer; margin-top:20px;background:#fff;border-radius:3px;-webkit-border-radius:3px;-moz-border-radius:3px;-o-border-radius:3px;}
+.logisticsEntrust:hover{ border:1px solid #2d7bd3;box-shadow: 0 0 3px #afaeae;}
+.entrustAdd{width:377px;border:1px solid #ced7ea; padding:182px 0 102px 0; text-align:center;cursor:pointer; margin-top:20px;background:url(../images/entrustAdd.png) center center no-repeat; font-size:14px; color:#ee7805; font-weight:bold;-webkit-border-radius:3px;-moz-border-radius:3px;-o-border-radius:3px;}
+.entrustAdd:hover{ border:1px solid #2d7bd3;box-shadow: 0 0 3px #afaeae;background:url(../images/entrustAdd.png) center center no-repeat;}
+.mr0{ margin-right:0;}
+.logisticsEntrust_tit{width:357px; height:35px; line-height:35px; border-bottom:1px solid #ced7ea; background:#f2f6ff; color:#2d7bd3; padding-left:20px;}
+.titleSize{ font-size:16px;}
+.viewTable{font-family:"宋体";font-size:14px;color:#365374;text-align:left;width:377px;padding-top:8px;}
+.lineTr{height:30px;line-height:30px;}
+.lineTr td{padding-left:5px;}
+.lineTr strong{ color:#f60;}
+.tableField{text-align:right;color:#8a8a8a; font-size:12px;}
+.textGreen{ font-size:12px; font-weight:bold; color:#38ab19;}
+.entrustedOperation{ position: relative; background:#F00; right:0; top:0; font-size:12px; font-weight:normal;}
+a.payBth{ margin-left:10px; display: inline-block; padding:0 6px; line-height:24px; background:#8dbe53;font-style: normal; color:#fff;border-radius:5px; font-size:12px;}
+a.payBth:hover{ color:#fff;text-decoration: underline;}
+.noview{position:relative;}
+.noviewbg{background:url("../images/noview.png") no-repeat;top:-4px;left:-4px;position:absolute;display:block;width:71px;height:71px;}
+a.see,a.del,a.edit{ display:inline-block; height:17px; line-height:17px; margin:8px 5px 0 0;padding-left:18px;color:#2d7bd3;}
+a.del{ background:url(../images/dell.png) 0 1px no-repeat;}
+a.del:hover{ background:url(../images/dell.png) 0 1px no-repeat;}
+a.edit{ background:url(../images/editt.png) 0 1px no-repeat;}
+a.edit:hover{ background:url(../images/editt.png) 0 1px no-repeat;}
+a.see{ background:url(../images/right.png) left no-repeat;color:#5ce113;}
+a.see:hover{text-decoration:none;}
+.mb20{margin-bottom:20px;}
