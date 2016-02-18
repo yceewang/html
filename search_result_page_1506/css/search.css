@@ -1,0 +1,152 @@
+@charset "utf-8"
+/* 
+---------------------------------
+Site:"搜索结果页"
+Author:Yichen Wang
+Updated:20150611
+Updated by:Yichen Wang
+--------------------------------- 
+*/
+
+/*=====S 主要区域=====*/
+.main{width:1024px;margin:0 auto;}
+/*=====e 主要区域=====*/
+/*=====S 搜索区域=====*/
+.searchResult{position:relative;top:-15px;}
+.h2Title{font-size:20px;padding:10px 20px;background:#f8f5f5;border-bottom:2px solid #2d7bd3;color:#000;font-family:"微软雅黑";font-weight:normal;}
+.h2Title i{border:3px solid #2d7bd3;margin-right:10px;}
+.searchArea{background:#fff;border:1px solid #ced7ea;padding-bottom:50px;}
+.searchLabel{border-bottom:1px dashed #e6e6e6;margin:0 10px;font-family:"宋体";font-size:12px;color:#666;line-height:40px;}
+.searchLabel a{margin-right:20px;color:#666;padding:5px;line-height:40px;white-space:nowrap;}
+.searchLabel a:hover{background:#32a1e6;color:#fff;text-decoration:none;}
+.searchLabel a.current{background:#32a1e6;color:#fff;}
+.searchLabel .labelMore{float:right;}
+.searchLabel .labelMore a, .searchLabel .labelMore a:hover{color:#999;padding-right:10px;background:url(../images/labeldown.png) right center no-repeat;}
+.searchLabel .labelMoreOpen a, .searchLabel .labelMoreOpen a:hover{background:url(../images/labelup.png) right center no-repeat;}
+.searchLabel .labelTitle{float:left;font-weight:bold;text-align:right;width:100px;margin-right:10px;}
+.searchLabel .labelContent{float:left;width:740px;height:40px;overflow: hidden;}
+.searchLabel .labelContentMore{height:auto;}
+a.unfold{display:block;width:110px;height:30px;line-height:30px;margin:0 auto;text-align:center;background:url(../images/unfold.png) 75px center no-repeat #fff;font-family:"宋体";font-size:12px;color:#666;border:1px solid #ced7ea;border-bottom:0px;border-radius:3px;position:relative;top:-31px;}
+a.unfold:hover{text-decoration:none;}
+a.fold{display:block;width:110px;height:30px;line-height:30px;margin:0 auto;text-align:center;background:url(../images/fold.png) 75px center no-repeat #fff;font-family:"宋体";font-size:12px;color:#666;border:1px solid #ced7ea;border-bottom:0px;border-radius:3px;position:relative;top:-31px;}
+a.fold:hover{text-decoration:none;}
+/*=====E 搜索区域=====*/
+/*=====搜索栏开始=====*/
+.searchBarTop{background:#fafafa;height:45px;line-height:45px;border:1px solid #e6e6e6;border-bottom:0px;font-size:14px;font-family:"微软雅黑";color:#666;}
+.searchBarTop .searchType{display:inline-block;width:120px;text-align:center;float:left;color:#666;border-right:1px solid #e6e6e6;font-size:18px;}
+.searchBarTop .searchType:hover{background:#32a1e6;color:#fff;text-decoration:none;}
+.searchBarTop .searchTypeCurrent{background:#32a1e6;color:#fff;}
+.searchBarTop .searchPage{color:#666;line-height:45px;float:right;padding:0 20px;}
+.searchBarTop a.leftPage{display:inline-block;width:6px;height:9px;background:url(../images/left.png) left center no-repeat;padding-right:20px;}
+.searchBarTop a.rightPage{display:inline-block;width:6px;height:9px;background:url(../images/right.png) right center no-repeat;padding-left:20px;}
+.searchBarTop a.leftPageLast{background:url(../images/leftLast.png) left center no-repeat;}
+.searchBarTop a.leftPageLast:hover, .searchBarTop a.rightPageLast:hover{cursor:default;}
+.searchBarTop a.rightPageLast{background:url(../images/rightLast.png) right center no-repeat;}
+.searchBarTop .currentPage{color:#ff6600;}
+.searchBarTop .total{float:right;display:inline-block;color:#999;padding-right:10px;}
+.searchBarTop .total i{color:#ff6600;font-style:normal;}
+.searchBarTop .borderRight{border-right:1px solid #ced7ea;}
+.searchBar{background:#f9fcfe;border:1px solid #ced7ea;border-bottom:0px;height:30px;line-height:30px;overflow:visible;}
+.searchBar .searchItem{display:inline-block;width:75px;text-align:center;float:left;color:#666;}
+.searchBar .searchItem:hover{color:#000fff;text-decoration:none;}
+.searchBar .searchItemCurrent{color:#000fff;}
+.searchBar .up{background:url(../images/up.png) 60px 9px no-repeat;}
+.searchBar .down{background:url(../images/down.png) 55px 10px no-repeat;}
+.searchBar .opened{background:url(../images/labelup.png) 72px center no-repeat;}
+.searchBar .closed{background:url(../images/labeldown.png) 72px center no-repeat;}
+.searchBar .deadline, .searchBar .publishDate{position:relative;display:inline-block;width:90px;float:left;}
+.searchBar .dropdown{position:absolute;top:30px;right:-20px;border:1px solid #ced7ea;border-bottom:0px;background:#fff;}
+.searchBar .dropdown:before{content:'';display:block;width:11px;height:7px;background:url(../images/dropdown.png) top center no-repeat;position:relative;top:-7px;left:46%;}
+.searchBar .dropdown a{display:block;width:135px;height:30px;line-height:30px;color:#666;text-align:center;border-bottom:1px solid #ced7ea;}
+.searchBar .dropdown a:hover{background:#e7eaef;text-decoration:none;}
+/*=====搜索栏结束=====*/
+/*=====S 搜索结果区域=====*/
+.section{width:1022px;margin:0 auto;background:#fff;border:1px solid #ced7ea;}
+.section:hover{box-shadow: inset 0 0 0 5px #e6e6ec;transition:all 0.3s ease;cursor:pointer;}
+.title{font-family:"微软雅黑";font-size:18px;margin-bottom:5px;color:#334555;}
+/*=====E 搜索结果区域=====*/
+/*=====S 标签=====*/
+.tag{display:inline-block;width:238px;padding:5px 4px;font-size:12px;font-family:"宋体";}
+.tag i{padding:5px;margin:0 2px;_margin:0 2px;background:#d9e8f1;font-style:normal;}
+.tag i.hotTag{background:#1398f5;color:#fff;}
+/*=====E 标签=====*/
+/*=====S 搜索结果区域顶部=====*/
+.layer_t{color:#666;margin:15px 5px 0 20px;line-height:24px;}
+.layer_t .shop{color:#32a1e6;}
+.layer_t .groupon{color:#ff6600;}
+.layer_t .match{color:#009e3a;}
+.layer_t .hot{display:inline-block;width:17px;height:18px;background:url(../images/hot.png) center no-repeat;vertical-align:middle;margin-bottom:5px;*margin-bottom:0;}
+/*=====E 搜索结果区域顶部=====*/
+/*=====S 搜索结果区域详细=====*/
+.description{padding:10px 10px 10px 20px;}
+.description ul{float:left;margin-right:10px;}
+.description li{margin-bottom:15px;color:#666;font-size:12px;}
+.descriptionNumber{padding-right:2px;color:#ff7055;font-weight:bold;}
+.descriptionText{color:#334555;font-size:14px;}
+.width210{width:210px;}
+.width210 li{width:210px;}
+.buttonArea{width:300px;float:right!important;}
+.buttonArea li{margin-bottom:15px;}
+.groupbuying_left{color:#666;font-size:12px;}
+.groupbuying_left .second{padding-left:5px;}
+.groupbuying_left .orange{color:#ff7055;font-style:normal;}
+.groupbuying_price{font-family:"宋体";font-weight:bold;color:#666;}
+.groupbuying_price i{font-style:normal;}
+.groupbuying_price .priceArea{display:inline-block;width:160px;font-size:14px;}
+.groupbuying_price .signal{font-family:"微软雅黑";font-size:14px;color:#e61616;font-weight:bold;}
+.groupbuying_price .price{font-family:"Arial";font-size:24px;color:#e61616;padding-right:10px;}
+/*=====E 搜索结果区域详细=====*/
+
+/*=====S 灰色背景=====*/
+.greyColumn{background:#f7f7f7;}
+/*=====E 灰色背景=====*/
+/*=====面包屑开始=====*/
+.breadNav{margin:10px auto;width:1024px;border:1px solid #dfe2e9;height:44px;background: url(../images/add_pic.png) left center no-repeat #fff; line-height:45px; color:#666;}
+.breadNav span{margin-left:20px;}
+.breadNav a{padding:0 5px;}
+.breadNav a:link .breadNav a:visited, { color:#666;font-weight:bold;margin:0 5px;}
+.breadNav a:hover,{color:red;font-weight:bold;margin:0 5px;}
+.breadNav .breadNavredcol{color:#fc2a33;}
+/*=====面包屑结束=====*/
+/*===翻页 s===*/
+.page{margin:20px auto;color:#999;text-align:center;}
+.page input{margin:0 5px;color:#999;width:25px;height:25px;line-height:25px;text-align:center;}
+.page a{display:inline-block;padding:2px 8px;*zoom:1;color:#999;border:1px solid #999;}
+.page a:hover, .paging a:active{border:1px solid #2473CA;color:#2473CA;text-decoration:none;}
+.prev a,.next a{width:65px;}
+.current a{background:#1fa4ff;color:#fff;}
+.page a.current a:hover{background:#2473CA;}
+/*===翻页 e===*/
+/*没有信息*/
+.nomessage{width:1024px;margin:0 auto;text-align:center; border:1px solid #e5e5e5; padding:100px 0;background:#fff;position:relative;top:-15px;}
+.orderImg{background:url(../images/orderImg.jpg) center top no-repeat;width:130px;height:145px;margin:0 auto;}
+.orderTxt{ font-size:24px; font-family:"微软雅黑"; color:#828282; line-height:45px;}
+.orderDetail{font-family:"宋体";font-size:14px;color:#000;line-height:36px;}
+.orderName{color:#f60;}
+a.orderBtn{padding:5px;color:#2d7bd3;background:#ced7ea;margin-left:10px;border-radius:5px;}
+a.orderBtn:hover{background:#1d394b;color:#fff;text-decoration:none;}
+/*闪购*/
+.flashBuy{background-color:none;background-image: url(../images/flashIcon.png);background-repeat: no-repeat;background-position:left top;
+}
+.flashBuy .layer_t{padding-left:20px;}
+.local_title{float:left;margin-top:7px;margin-right:5px;width:40px;height:17px;line-height:17px;color:#fff;background-color:#ff6600;text-align:center;}
+.productPrice{display:inline-block;float:left;}
+.productPrice strong{font-size:24px;color:#e61616;}
+.buttonArea li .price {display:inline-block;height:17px;margin-left:10px;vertical-align:bottom;}
+.buttonArea li .price strong{font-weight:normal;color:#f60;}
+/*温馨提示部分*/
+.productPrice strong{font-weight:normal;}
+a.descriptionnow{color:#f00;background:url("../images/timelist.png") no-repeat right 0;padding-right:15px; text-decoration:none;}
+.time{position:relative;padding-left:10px;}
+.time_current{width:224px; border:1px #ff0000 solid;}
+
+.msg{position:absolute;bottom:-105px;left:-170px;z-index:3;}
+.msgLast{left:-16px;}/*20150714 yichen*/
+.top{width:16px;height:10px;background:url("../images/top.jpg") no-repeat;position:absolute;top:-7px;right:28px;}
+.cont{width:320px;height:95px;border-radius:5px;border:1px #cbcbcb solid;background:#fff;}
+.cont h2{width:290px;height:32px;line-height:32px;background:#f6f6f6;color:#666;margin:0 auto;margin-top:15px;padding-left:10px;font-size:14px;}
+.cont_con{height:45px;line-height:45px;padding-left:20px;color:#666;}
+.cont_con font{color:#ff6f54;font-size:12px;}
+/* 广告 */
+.searchbanner{display:block;width:1026px;height:137px;margin:0 auto;margin-bottom:10px;}
+.searchbanner img{width:1026px;height:137px;}
