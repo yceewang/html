@@ -1,0 +1,90 @@
+@charset "utf-8";
+/* CSS Document */
+.header_t{width:100%;background:#404243;height:30px;line-height:30px;}
+.login {margin-left:40px;color:#93999c;}
+.login a ,.header_r a{padding:0 10px;color:#dae3f4;}
+.header_r{width:430px;}
+.login a.loadTxt{color:#0b96f7;}
+.login a:hover,.header_r a:hover{color:#ff7055;}
+.headerTel,.ecoalLogo a{display:inline-block;width:226px;height:30px;vertical-align:middle;background:url(../images/icon.gif) no-repeat -62px 0px;}
+.weibo,.wechat{display:inline-block;width:30px;height:30px;background:url(../images/icon.gif) no-repeat;}
+.weibo{background-position:0 -33px;margin-left:10px;}
+.weibo:hover{background-position:0 -99px;}
+.wechat:hover{background-position:0 -66px;}
+.header_b{height:120px;}
+.ecoalLogo{display:block; overflow:hidden; margin:22px 20px; _width:420px;}
+.ecoalLogo a{display:inline-block;width:391px;height:70px;background-position:0 -417px;}
+.search{float:right;margin:35px 0 0 0px;position:relative;width:450px;}
+.search input{display:block;padding-left:5px;height:40px;width:298px;line-height:40px;border:1px solid #dcdddf;outline:none;}
+.search input:hover{border:1px solid #4391e9; box-shadow:1px 1px 0px #8ec0f6;}
+.search a{display:inline-block;position:absolute;right:140px;top:0px;width:75px;height:41px;background:#2d7bd3;text-align:center;line-height:40px;color:#fff;font-family:"微软雅黑";font-weight:bold;font-size:14px;text-decoration:none;}
+.search a:hover{background:#1156a4;}
+.searchIcon{background:#00F;}
+/*导航*/
+.nav{background:#dae3f4;margin-bottom:15px;}
+.nav .wrapper{background:#2d7bd3;}
+.nav .wrapper li{float:left;}
+.nav .wrapper li a{display:inline-block;width:144px;height:50px;line-height:50px;text-align:center;color:#dae3f4;text-decoration:none;font-size:16px;font-weight:700;}
+.nav .wrapper li a:hover{background:#114b8c;}
+.nav .wrapper li a.current{background:#1398f5;}
+.nav .navLine{width:0px;height:50px;border-left:1px solid #6aa7ec;border-right:1px solid #061a31;}
+
+/*=====页面底部开始=====*/
+.footer{background:#2f3545;width:100%;height:350px;margin-top:20px;}
+.footerBox{background:#3f4658;width:100%;height:210px;}
+.footer_t{width:1024px;padding:20px 0;color:#fff;position:relative;margin:0 auto;}
+.footer_t ul li{float:left;width:100px;height:45px;line-height:45px; margin:0 30px;padding:0 10px;color:#fff;background:url(../images/lin.png) left bottom no-repeat;font-family:Microsoft YaHei;font-size:16px;font-weight:normal;}
+.footer_t ol{float:left; width:120px;line-height:30px;margin:30px;}
+.footer_t ol li a:link,.footer_t ol li a:visited,.footer_t ol li a{color:#fff;text-decoration:none;font-family:Microsoft YaHei;font-size:12px;font-weight:normal;}
+.footer_t ol li a:hover{color:#f60;}
+.footerCode{width:106px;text-align:center;position:absolute;right:0px; top:53px;}
+.footerCode a:link,.footerCode a:visited{display:block; overflow:hidden;border-radius:5px;font-family:Microsoft YaHei; background:#2f3545; width:106px; height:26px; line-height:26px; text-align:center; color:#fff; text-decoration:none; margin:10px 0;}
+.footerCode a:hover{background:#07163D;transition:all 0.5s;}
+.footer_b{width:1024px; padding:5px 0; color:#fff; margin:0 auto;}
+.footer_b ul{width:710px; margin:0 auto;}
+.footer_b ul li{height:45px; line-height:45px; color:#fff; float:left; font-family:Microsoft YaHei; font-size:14px; cursor:pointer;}
+.footer_b ul li a:link, .footer_b ul li a:visited,.footer_b ul li a{ color:#fff; text-decoration:none;}
+.footer_b ul li span{padding:0 35px;}
+.footer_b p{width:670px; float:left; height:30px; line-height:30px; padding-left:20px;}
+.footer_b p span{float:left; font-family:Microsoft YaHei; font-size:12px; margin:0 20px;}
+.footer_b ol{width:315px; float:left;}
+.footer_b ol li{height:30px; line-height:30px; color:#fff; float:left; font-family:Microsoft YaHei; font-size:12px; cursor:pointer;}
+.footerlicp{margin:0 0 0 20px;}
+.footer_b p a:link,.footer_b p a:visited,.footer_b p span a:link,.footer_b p span a:visited,.footer_b ol li a:link,.footer_b ol li a:visited,.footer_b ol li a{ color:#fff; text-decoration:none;}
+.footer_b ol li span{padding:0 26px;}
+.footer_b ol li a:hover,.footer_b p a:hover,.footerCont2 p span a:hover,.footer_b ul li a:hover,.footercont_t ol li a:hover{color:#f06135;}
+/*=====页面底部结束=====*/
+/*=====悬浮框开始=====*//*新 2015-03-02 corected by Alice*/
+.sidebar{position:fixed;_position:absolute;top:0px; right:0px;z-index:999; width:40px;height:100%; _height:1000px; background:#444851;}
+.sidebarContent{position:absolute;bottom:10%;right:0px;}
+.sidebarContent li{margin:20px 8px; }
+.sidebarContent a{display:block;width:24px;color:#7a8a99;}
+.needs,.video,.hotline,.qr_code,.cantact,.backTop{background:url(../images/icon.png) no-repeat;}
+.needs{background-position:0 -512px;height:54px;}
+.video{background-position: 0 0;height:37px;}
+.hotline{background-position: 0 -125px;height:37px;}
+.qr_code{background-position: 0 -108px;}
+.cantact{background-position: 0 -232px;height:37px;}
+.backTop{background-position: 0 -326px;height:53px;}
+.needs:hover{background-position:0 -439px;}
+.video:hover{background-position: 0 -59px;}
+.hotline:hover{background-position: 0 -178px;}
+.qr_code:hover{background-position: 0 -135px;}
+.cantact:hover{background-position: 0 -280px;}
+.backTop:hover{background-position: 0 -378px;}
+.needs p,.video p,.hotline p,.qr_code p,.cantact p,.backTop{display:none;}
+.needs:hover p,.video:hover p,.hotline:hover p,.qr_code:hover p,.cantact:hover p,.backTop:hover p{display:block;position:absolute;border:1px solid #dadbde;background:#fff;width:150px;height:30px;line-height:30px;text-align:center;}
+.needs:hover p{width:100px;}
+.cantact:hover p{width:80px;}
+.qr_code:hover p{width:120px;height:150px;}
+.video strong,.hotline strong{color:#ee6034;}
+.video:hover p{right:40px;top:100px;}
+.hotline:hover p{right:40px;top:155px;width:180px;height:30px;line-height:30px;}
+.qr_code:hover p{right:40px;top:70px;}
+.cantact:hover p{right:40px;top:205px;}
+.video strong:hover{color:#1dbfa8;}
+.needs:hover p{right:40px;top:32px;}
+.siderArrow{display:inline-block;position:absolute;bottom:7px;right:-16px;border-color:transparent transparent transparent #fff;_border-color:transparent;width:0;height:0;border-width:8px;_border-width:0px;border-style:dashed dashed dashed solid;_border-style:none;}
+.qr_code:hover p .siderArrow{top:75px;}
+.sidebarContent  li em{font-style:normal;font-size:12px; font-weight:normal;color:#fff;}/*新 2015-03-02 corected by Alice*/
+/*=====悬浮框结束=====*

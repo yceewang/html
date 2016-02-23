@@ -1,0 +1,32 @@
+@charset "UTF-8";/* 
+/* 
+---------------------------------
+Site:"报名弹出"
+Author:Yichen Wang
+Updated:20150528
+Updated by:Yichen Wang
+--------------------------------- 
+*/
+/*弹出框 start*/
+.popup {z-index:99;overflow:hidden;position:fixed;left:0;top:0;width:100%;height:100%;background-color:#333;filter:Alpha(Opacity=70);opacity:0.7;}
+.boxShadow{} 
+.popupContent{position: absolute;background:url(../images/bg.png) no-repeat;z-index:101;}
+.size{top: 50%;left: 50%;width:698px;height:578px;margin-left:-350px;margin-top:-300px;}
+a.popupClose{display:block;width:19px;height:19px;background:url(../images/close.png) no-repeat;position:absolute;top:0;right:48px;}/*20150610 修改*/
+.applyText{position:absolute;top:80px;left:50%;margin-left:-235px;width:470px;color:#ddd;line-height:20px;text-indent:2em}
+.applying{margin-top:256px;text-align:center;font-family:"微软雅黑";font-size:18px;color:#9d2328}/*20150610 修改*/
+
+.applyArea{margin-top:20px;}/*20150609 修改*/
+.line{margin:5px 0 10px 190px;color:#666;font-size:14px;display:block;}/*20150610 修改*/
+.inputTitle{display:inline-block;width:90px;}
+input{width:180px;height:28px;line-height:28px;border: 1px solid #ccc;border-radius:3px;-webkit-border-radius:3px;-moz-border-radius:3px;-o-border-radius:3px;color: #999;padding-left:5px;}
+input:hover, input:focus{outline:none;border-color:#2d7bd3;}
+.hint{display:inline-block;margin-left:10px;background:url("../images/hint.png") left 10px no-repeat;padding-left:20px;line-height:32px;font-size:12px;color:#555;}
+
+.applyType{color:#999;font-size:12px;margin-right:25px;}
+.radio{display:inline-block;background:url(../images/radio1.png) no-repeat; width:12px; height:12px;margin-right:5px;vertical-align:middle;}
+.checked{background:url(../images/radio2.png) no-repeat;}
+a.txtinfoBtn{ display: inline-block;font-size:14px;background:#32a1e6;padding:8px 40px;color:#fff;margin:0px 0 0 285px;}/*20150609 修改*/
+a.txtinfoBtn:hover{background:#1d394b;text-decoration: none;color:#fff;}
+/*弹出框 end*/
+
