@@ -1,0 +1,186 @@
+/* ------------------------------------全局定义---------------------------------------- */
+/* 将具有默认margin和padding的标记置零，所有标记的margin、padding都在使用时具体定义  *{ margin:0;padding:0;}*/
+/* 修正IE6的斜体溢出bug */
+* html body{ overflow:visible;}
+* html iframe, * html frame{ overflow:auto;}
+* html frameset{ overflow:hidden;}
+/* 常用标签，基本标签默认样式取消，HTML标签，取消基本标签默认样式，防止不同浏览器显示效果不同，text-align:left; 解决不同浏览器居中问题 */
+body{ color:#333;background:#f2f6ff; font:12px/22px Verdana,Arial,sans-serif,"Times New Roman",宋体; text-align:left;}
+body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div,tr{ margin:0; padding:0;}
+input,select,textarea{font-size:12px; vertical-align:middle;}
+/* 设置内容左对齐，恢复因BODY设置剧中产生的继承 */
+body div{
+	text-align:left;
+}
+/* 标签属性，textarea,input 强制输入时内容超出时换行 */
+textarea,input{ word-wrap:break-word; word-break:break-all; padding:0px;}
+/* 清除ul列表标记的样式，ul列表更多的用在不需要列表前置符号的样式里 */
+li{list-style-type: none;font-weight: bold;}
+/* 定义图片边框，当图片作为链接内容被填充时，会有默认边框出现，重定义掉 */
+img{ border:0 none;}
+/* 定义默认的链接样式，仅仅是作为默认样式提供，可以在各自的实例中覆盖掉 */
+a:link{ color:#04C; text-decoration:none;}
+a:hover{ color:#F60; text-decoration:underline;}
+/* 去掉链接的虚线框 */
+a{outline:none;star:expression(this.onFocus=this.blur()); text-decoration:none;}
+/* 定义H系列标签，覆盖H系列标签默认属性 */
+h1{ font-size:24px; }
+h2{ font-size:20px;}
+h3{ font-size:18px;}
+h4{ font-size:16px;}
+h5{ font-size:14px;}
+h6{ font-size:12px;}
+/*------------------- 下面的通用样式可以根据实际需要选择复制----------------*/
+/* ------------------------------------通用属性定义---------------------------------------- */
+/* 鼠标样式 */
+.pointer{ cursor:pointer;}
+/* 取消边框 */
+.noBorder{ border:0 none;}
+/*取消背景色*、
+.nobg{background:none !important;}
+/* 文本对齐方式 */
+.t_l{text-align:left;}
+.t_c{text-align:center;}
+.t_r{text-align:right;}
+/* 定义文本下划线 */
+.unLine{ text-decoration:underline;}
+.disunLine{ text-decoration:none;}
+/* 定位关系 */
+.absolute{ position:absolute;}
+.relative{ position:relative;}
+/* 字母和单词换行设置，强制内容换行，强制内容不换行 */
+.break{ word-break:break-all; word-wrap:break-word;}
+.nobreak{ word-break:keep-all; word-wrap:normal;}
+/* 浮动定义 */
+.fl{ float:left;}
+.fr{ float:right;}
+/* 容器 */
+.wrapper{ clear:both; overflow:hidden;}
+/* 隐藏元素，当元素内容内容超出元素height 或 width 时，隐藏之 */
+.o-hidden{ overflow:hidden;}
+/*
+* 隐藏元素，visibility可以隐藏元素，但是还是会在布局中占位 */
+.invisible{ visibility:hidden;}
+/* 从页面布局上隐藏元素，从布局上隐藏元素 */
+.hidden{ display:none;}
+.block{ display:block;}
+/* ------------------------------------清理元素--------------------------------------- */
+/* 清理浮动元素,当浮动换行时后面元素不希望浮动，添加此属性，防止IE BUG */
+.clear{ clear:both; height:0px; width:100%; font-size:1px; line-height:0px; visibility:hidden; overflow:hidden;}
+/*===div内清除浮动 start===*/
+.cf:before, .cf:after {content: " "; /* 1 */ display: table; /* 2 */ }
+.cf:after { clear: both; }
+/** For IE 6/7 only Include this rule to trigger hasLayout and contain floats. */
+.cf{*zoom: 1; }
+/* 圆角5px */
+.radius5px{border-radius:5px;-webkit-border-radius:5px;-moz-border-radius:5px;-o-border-radius:5px;}
+.transition{transition: all 0.5s;-moz-transition: all 0.5s;-o-transition: all 0.5s;-webkit-transition: all 0.5s;}
+/*=====页面头部开始=====*/
+.header{width:100%;height:154px;}
+.header_t{width:100%;height:35px;overflow:hidden;background:#2c2c2c;border-bottom:1px solid #afb1b0;}
+.wrapper{margin:0 auto;width:1024px;overflow:hidden;}
+.loadBarTop{display:block;width:120px;height:27px;line-height:27px;margin:3px 20px;background:#3f4658;border-radius:3px;-webkit-border-radius:3px;-moz-border-radius:3px;-o-border-radius:3px;border:1px solid #3a4151;}
+.loadBarTop a:link,.loadBarTop a:visited,.loadBarTop a{display:inline-block;overflow:hidden; width:60px; background:#3f4658;text-align:center;text-decoration:none; font-size:14px; color: #fff; font-weight:bold;*zoom:1;}
+.loadTxt{border-radius:3px 0 0 3px;-webkit-border-radius:3px 0 0 3px;-moz-border-radius:3px 0 0 3px;-o-border-radius:3px 0 0 3px;}
+.registerTxt{border-radius:0 3px 3px 0;-webkit-border-radius:0 3px 3px 0;-moz-border-radius:0 3px 3px 0;-o-border-radius:0 3px 3px 0;}
+.loadBarTop a:hover{background:#fc2a34;}
+.loadBarTop .headertbactive{background:#fc2a34;}
+.login{width:730px;height:35px;padding-left:40px;color:#fff;}
+.loadTxt{display:block;overflow:hidden;text-align:center;float:left;text-decoration:none;font-size:12px;color: #fff;}
+a.username{display:inline-block;font-size:12px;font-weight:bold;line-height:29px;color:#fff;width:70px;height:35px;line-height:35px;text-align:center;text-decoration:underline;background:#3c3b3b;}
+a:hover.username{color:red;background:#2d7bd3;}
+a.logout{display:inline-block;margin:0 10px;color:#eaebf0;}
+a:hover.logout{color:red;}
+.top_r{width:100px;_width:100px;}/*新 2015-03-02 corected by Alice*/
+.top_r li{float:right;}/*新 2015-03-02 corected by Alice*/
+.top_r li a{display:inline-block;width:30px;height:30px;margin:0 4px;border-radius:50px;-webkit-border-radius:50px;-moz-border-radius:50px;-o-border-radius:50px;text-align:center;vertical-align:middle;font-size:0;background:url(../images/topIcon.png) no-repeat;_background:url(../images/topIcon.gif) no-repeat;border:1px solid #464f5c;}
+.top_r a:hover{background:#0b6bd2 url(../images/topIcon.png)no-repeat;border:1px solid #16559c;transition:all 0.5s;transform:translate(5px,0);-moz-transform:translate(5px,0);-o-transform:translate(5px,0);-webkit-transform:translate(5px,0);text-decoration:none;}
+.top_r li a.wechat{background-position:-70px 5px;}
+.top_r li a.wechat:hover{background-position:-69px 5px;}
+.top_r li a.qq{background-position:5px 5px;}
+.top_r li a.qq:hover{background-position:6px 5px;}
+.top_r li a.weibo{background-position:-33px 5px;}
+.top_r li a.weibo:hover{background-position:-32px 5px;}
+.myPlatform{width:10%;text-align:right;}/*新 2015-03-02 corected by Alice*/
+.myPlatform a{display:inline-block;height:35px;line-height:35px;padding-left:20px;color:#fff;background:url(../images/topIcon.png) no-repeat -106px 7px;_background:url(../images/topIcon.gif) no-repeat -106px 7px;}
+.header_b{height:120px;}
+.ecoalLogo{display:block; overflow:hidden; margin:22px 20px; width:415px; _width:420px;}
+.ecoalLogo img{margin-right:10px;}
+.search{float:right;margin:35px 0 0 0px;position:relative;width:450px;}
+.search input{display:block;padding-left:5px;height:40px;width:298px;line-height:40px;border:2px solid #dcdddf;outline:none;}
+.search input:hover{border:2px solid #4391e9; box-shadow:1px 1px 0px #8ec0f6;}
+.search a{display:inline-block;position:absolute;right:144px;top:2px;width:75px;height:40px;background:#2d7bd3;text-align:center;line-height:40px;color:#fff;font-family:"微软雅黑";font-weight:bold;font-size:14px;text-decoration:none;}
+.search a:hover{background:#1156a4;}
+.searchIcon{background:#00F;}
+
+/*=====页面头部结束=====*/
+/*=====导航开始=====*/
+.nav{width:100%;height:50px; margin:0 auto;background:#dae3f4; }
+.nav ul{height:50px;background:#2d7bd3;}
+.nav ul li{float:left;}
+.nav_line{display:inline-block;width:2px;height:50px;line-height:50px;background:url(../images/nav_line.png) center center no-repeat;}
+.tel{width:243px;height:50px;background:url(../images/adbtn.jpg) no-repeat;}
+.nav ul li a{float:left;position:relative;display:inline-block;width:154px;_width:152px;height:45px;line-height:50px; text-align:center;border-bottom:5px solid #2d7bd3;font-family:Microsoft YaHei; font-size:16px;color:#fff;_border:none;}
+.nav ul li a:link{color:#fff;}
+.nav ul li a:hover{font-size:18px;background:#1156a4; border-bottom:5px solid #393e4a;_border:none;_color:#fff;text-decoration:none;}
+.nav ul li a:hover .navArrow{display:inline-block;position:absolute;bottom:0px;left:73px;border-color:transparent  transparent #393e4a transparent;border-style:dashed dashed solid dashed;width:0;height:0;border-width:8px;_border:none;}
+/*=====导航结束=====*/
+/*=====页面底部开始=====*/
+.footer{background:#2f3545;width:100%;height:350px;margin-top:20px;}
+.footerBox{background:#3f4658;width:100%;height:210px;}
+.footer_t{width:1024px;padding:20px 0;color:#fff;position:relative;margin:0 auto;}
+.footer_t ul li{float:left;width:100px;height:45px;line-height:45px; margin:0 30px;padding:0 10px;color:#fff;background:url(../images/lin.png) left bottom no-repeat;font-family:Microsoft YaHei;font-size:16px;font-weight:normal;}
+.footer_t ol{float:left; width:120px;line-height:30px;margin:30px;}
+.footer_t ol li a:link,.footer_t ol li a:visited,.footer_t ol li a{color:#fff;text-decoration:none;font-family:Microsoft YaHei;font-size:12px;font-weight:normal;}
+.footer_t ol li a:hover{color:#f60;}
+.footerCode{width:106px;text-align:center;position:absolute;right:0px; top:53px;}
+.footerCode a:link,.footerCode a:visited{display:block; overflow:hidden;border-radius:5px;font-family:Microsoft YaHei; background:#2f3545; width:106px; height:26px; line-height:26px; text-align:center; color:#fff; text-decoration:none; margin:10px 0;}
+.footerCode a:hover{background:#07163D;transition:all 0.5s;}
+.footer_b{width:1024px; padding:5px 0; color:#fff; margin:0 auto;}
+.footer_b ul{width:710px; margin:0 auto;}
+.footer_b ul li{height:45px; line-height:45px; color:#fff; float:left; font-family:Microsoft YaHei; font-size:14px; cursor:pointer;}
+.footer_b ul li a:link, .footer_b ul li a:visited,.footer_b ul li a{ color:#fff; text-decoration:none;}
+.footer_b ul li span{padding:0 35px;}
+.footer_b p{width:670px; float:left; height:30px; line-height:30px; padding-left:20px;}
+.footer_b p span{float:left; font-family:Microsoft YaHei; font-size:12px; margin:0 20px;}
+.footer_b ol{width:315px; float:left;}
+.footer_b ol li{height:30px; line-height:30px; color:#fff; float:left; font-family:Microsoft YaHei; font-size:12px; cursor:pointer;}
+.footerlicp{margin:0 0 0 20px;}
+.footer_b p a:link,.footer_b p a:visited,.footer_b p span a:link,.footer_b p span a:visited,.footer_b ol li a:link,.footer_b ol li a:visited,.footer_b ol li a{ color:#fff; text-decoration:none;}
+.footer_b ol li span{padding:0 26px;}
+.footer_b ol li a:hover,.footer_b p a:hover,.footerCont2 p span a:hover,.footer_b ul li a:hover,.footercont_t ol li a:hover{color:#f06135;}
+/*=====页面底部结束=====*/
+/*=====悬浮框开始=====*//*新 2015-03-02 corected by Alice*/
+.sidebar{position:fixed;_position:absolute;top:0px; right:0px;z-index:999; width:40px;height:100%; _height:1000px; background:#444851;}
+.sidebarContent{position:absolute;bottom:10%;right:0px;}
+.sidebarContent li{margin:20px 8px; }
+.sidebarContent a{display:block;width:24px;color:#7a8a99;}
+.needs,.video,.hotline,.qr_code,.cantact,.backTop{background:url(../images/icon.png) no-repeat;}
+.needs{background-position:0 -512px;height:54px;}
+.video{background-position: 0 0;height:37px;}
+.hotline{background-position: 0 -125px;height:37px;}
+.qr_code{background-position: 0 -108px;}
+.cantact{background-position: 0 -232px;height:37px;}
+.backTop{background-position: 0 -326px;height:53px;}
+.needs:hover{background-position:0 -439px;}
+.video:hover{background-position: 0 -59px;}
+.hotline:hover{background-position: 0 -178px;}
+.qr_code:hover{background-position: 0 -135px;}
+.cantact:hover{background-position: 0 -280px;}
+.backTop:hover{background-position: 0 -378px;}
+.needs p,.video p,.hotline p,.qr_code p,.cantact p,.backTop{display:none;}
+.needs:hover p,.video:hover p,.hotline:hover p,.qr_code:hover p,.cantact:hover p,.backTop:hover p{display:block;position:absolute;border:1px solid #dadbde;background:#fff;width:150px;height:30px;line-height:30px;text-align:center;}
+.needs:hover p{width:100px;}
+.cantact:hover p{width:80px;}
+.qr_code:hover p{width:120px;height:150px;}
+.video strong,.hotline strong{color:#ee6034;}
+.video:hover p{right:40px;top:100px;}
+.hotline:hover p{right:40px;top:155px;width:180px;height:30px;line-height:30px;}
+.qr_code:hover p{right:40px;top:70px;}
+.cantact:hover p{right:40px;top:205px;}
+.video strong:hover{color:#1dbfa8;}
+.needs:hover p{right:40px;top:32px;}
+.siderArrow{display:inline-block;position:absolute;bottom:7px;right:-16px;border-color:transparent transparent transparent #fff;_border-color:transparent;width:0;height:0;border-width:8px;_border-width:0px;border-style:dashed dashed dashed solid;_border-style:none;}
+.qr_code:hover p .siderArrow{top:75px;}
+.sidebarContent  li em{font-style:normal;font-size:12px; font-weight:normal;color:#fff;}/*新 2015-03-02 corected by Alice*/
+/*=====悬浮框结束=====*
