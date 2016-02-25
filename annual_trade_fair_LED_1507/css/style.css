@@ -1,0 +1,127 @@
+@charset "utf-8";
+/* 
+---------------------------------
+Site:"会员管理"
+Author:Yichen Wang
+Updated:20150618
+Updated by:Yichen Wang
+--------------------------------- 
+*/
+/*public*/
+/* ------------------------------------全局定义---------------------------------------- */
+/* 将具有默认margin和padding的标记置零，所有标记的margin、padding都在使用时具体定义  *{ margin:0;padding:0;}*/
+/* 修正IE6的斜体溢出bug */
+* html body{ overflow:visible;}
+* html iframe, * html frame{ overflow:auto;}
+* html frameset{ overflow:hidden;}
+/* 常用标签，基本标签默认样式取消，HTML标签，取消基本标签默认样式，防止不同浏览器显示效果不同，text-align:left;解决不同浏览器居中问题 */
+body{ color:#333; background:#fff;font:Verdana,Arial,sans-serif,"Times New Roman",宋体;text-align:left;}
+body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div,tr{ margin:0;padding:0;text-shadow: none;}
+input,select,textarea{font-size:12px;vertical-align:middle;}
+/* 设置内容左对齐，恢复因BODY设置剧中产生的继承 */
+body div{text-align:left;}
+/* 标签属性，textarea,input 强制输入时内容超出时换行 */
+textarea,input{ word-wrap:break-word;word-break:break-all;padding:0px;}
+/* 清除ul列表标记的样式，ul列表更多的用在不需要列表前置符号的样式里 */
+li{ list-style-type:none;}
+/* 定义图片边框，当图片作为链接内容被填充时，会有默认边框出现，重定义掉 */
+img{ border:0 none;}
+/* 定义默认的链接样式，仅仅是作为默认样式提供，可以在各自的实例中覆盖掉 */
+a:link, a:visited{ color:#04C;text-decoration:none;}
+a:hover{color:#F60;text-decoration:none;}
+/* 去掉链接的虚线框 */
+a{outline:none;star:expression(this.onFocus=this.blur());text-decoration:none;}
+/* ------------------------------------清理元素--------------------------------------- */
+/* 清理浮动元素,当浮动换行时后面元素不希望浮动，添加此属性，防止IE BUG */
+.clear{ clear:both;height:0px;width:100%;font-size:1px;line-height:0px;visibility:hidden;overflow:hidden;}
+/*===div内清除浮动 start===*/
+.cf:before, .cf:after {content:" ";/* 1 */ display:table;/* 2 */}
+.cf:after{clear:both;}
+/** For IE 6/7 only Include this rule to trigger hasLayout and contain floats. */
+.cf{*zoom:1;}
+.fl{float:left;}
+.fr{float:right;}
+article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary {display: block;}
+.t_r{text-align:right;}
+.t_c{text-align:center;}
+.ellipsis{overflow:hidden; white-space:nowrap;text-overflow:ellipsis;}
+.hidden{display:none;}
+/*页面*/
+html{font-size:18px;}
+body{width:100%;font-family:"微软雅黑";background:url(../images/bg.jpg) left top no-repeat ;background-size:100%;}
+img {max-width:100%;}
+.headTitle{background:url(../images/title.png) center top no-repeat;width:38.2rem;height:6.4rem;background-size:38.2rem 6.4rem;margin:1.5rem auto;}
+.main_t{width:90%;margin:1rem auto 2rem auto;}
+.main_t .leftSection{width:47%;float:left;background:#fff;border-radius:10px;min-height:16rem;}
+.main_t .leftSection .leftTitle{position:relative;color:#fff;padding-left:5%;width:75%;height:4.6rem;line-height:4.6rem;margin:0.8rem 0;font-weight:bold;font-size:2.8rem;letter-spacing:0.8rem;text-shadow:3px 2px 3px rgba(20,68,108,0.75);background: #810002;
+background: -moz-linear-gradient(left, #810002 0%, #e03a2c 34%, #e24d38 74%, #df061a 100%);
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,#810002), color-stop(34%,#e03a2c), color-stop(74%,#e24d38), color-stop(100%,#df061a));
+background: -webkit-linear-gradient(left, #810002 0%,#e03a2c 34%,#e24d38 74%,#df061a 100%);
+background: -o-linear-gradient(left, #810002 0%,#e03a2c 34%,#e24d38 74%,#df061a 100%);
+background: -ms-linear-gradient(left, #810002 0%,#e03a2c 34%,#e24d38 74%,#df061a 100%);
+background: linear-gradient(to right, #810002 0%,#e03a2c 34%,#e24d38 74%,#df061a 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#810002', endColorstr='#df061a',GradientType=1 );}
+.main_t .leftSection .leftTitle:after{content:"";position:absolute;bottom:0px;right:-2rem;border:2.3rem solid #df061a;border-left:0.6rem solid #df061a;border-right:1.6rem solid transparent;}
+.main_t .leftSection .volume{font-size:1.8rem;color:#666;margin:2.5rem 0 3rem 1.5rem;}
+.main_t .leftSection .volume span{display:inline-block;font-weight:bold;width:2.8rem;height:4.5rem;line-height:4.5rem;font-size:2.5rem;text-align:center;color:#fae83e;background:#434343;border-radius:10px;}
+
+.main_t .rightSection{width:47%;float:right;background:#fff;border-radius:10px;min-height:16rem;}
+.main_t .rightSection .rightTitle{font-size:2.1rem;color:#0e4982;margin:1rem;}
+.main_t .rightSection .volume{font-size:1.8rem;color:#666;margin-left:3.5rem;line-height:5rem;}
+.main_t .rightSection .volume strong{color:#ec1717;font-size:2.7rem;padding-right:0.5rem;}
+
+.main_b{width:90%;margin:0 auto;min-height:22rem;background-color:#f3f6f8;border-radius:10px;}
+.congratulation{background:url(../images/congratulation_bg.png) center center no-repeat #f3f6f8;background-size:79rem 21rem;border-top:0.8rem solid #d0d9eb;border-bottom:0.8rem solid #d0d9eb;position:relative;}
+.congratulation:before{display:block;content:"";background:url(../images/congratulation.png) left top no-repeat;width:9rem;height:9rem;background-size:9rem 9rem;position:relative;top:-0.8rem;}
+.congratulation .amount{position:absolute;bottom:2rem;left:50%;margin-left:-16rem;width:21rem;}
+.congratulation .amount h1{font-size:7rem;letter-spacing:1rem;color:#fdec02;text-align:center;}
+
+.deal{font-size:1.8rem;color:#003399;}
+.deal .deal_wrapper, .congratulation .congratulation_wrapper{display:block;}
+.deal .congratulation_wrapper, .congratulation .deal_wrapper{display:none;}
+.deal .latest{height:9rem;background:url(../images/deal.png) left top no-repeat;background-size:9rem 9rem;background-color:#d0d9eb;padding-left:8rem;border-radius:10px 10px 0 0;}
+.deal ul li{display:block;float:left;margin-right:2.5rem;}
+.deal .latest strong{font-size:2.4rem;color:#ec1717;line-height:9rem;}
+.deal .companyName{width:22%;line-height:9rem;text-align:right;}
+.deal .seller_name, .deal .goods_name{display:inline-block;max-width:18%;position:relative;top:0.8rem;}
+.deal .smallFont{font-size:1.2rem;}
+.deal .seller{margin-top:2rem;width:22%;}
+.deal .seller p{line-height:2.4rem;width:100%;}
+.deal .line{width:100%;height:1px;border-top:2px dashed #fff;border-bottom:2px dashed #d0d9eb;position:relative;bottom:2px;}
+.deal .data{ height:12rem;position:relative; overflow:hidden;}
+.deal .data_bg{ height:100rem;position:absolute;}
+.deal .data p{text-align:center;line-height:3rem;}
+.deal .data p strong{color:#ec1717;}
+.deal .data .buy{color:#ec1717;padding:0 1rem;}
+.deal .data .company{display:inline-block;max-width:25%;position:relative;top:0.8rem;}
+.flashContent{width:100%;height:100%;position:absolute;z-index:999999;left:50%;top:50%;margin-left:-960px;margin-top:-720px;}/*20150717新增*/
+@media only screen and (max-width :900px){
+		html{font-size:6px;}
+		body{background:url(../images/bg2.png) left top no-repeat;background-size:100%;}
+		.main_t .leftSection, .main_t .rightSection{min-height:13rem;}
+		.main_t .rightSection .rightTitle{font-size:2.8rem;}
+		.main_t .rightSection .volume{line-height:4rem;}
+		.main_t .leftSection .volume{margin:2rem 0 2rem 1.5rem;}
+		.main_t .leftSection .volume span{width:2.2rem;height:3.5rem;line-height:3.5rem;}
+		.main_t .leftSection .leftTitle{width:60%;height:4rem;line-height:4rem;}
+		.main_t .leftSection .leftTitle:after{content:"";position:absolute;bottom:0px;right:-2rem;border:2rem solid #df061a;border-left:0.6rem solid #df061a;border-right:1.6rem solid transparent;}
+		.deal .data{height:19rem;}
+		.deal .data p{line-height:2.4rem;}
+		.congratulation{background:url(../images/congratulation_bg.png) 20% center no-repeat #f3f6f8;background-size:79rem 21rem;border-top:0.8rem solid #d0d9eb;border-bottom:0.8rem solid #d0d9eb;position:relative;}
+		.congratulation .amount{left:62%;bottom:3.5rem;}
+		.congratulation .amount h1{font-size: 11rem;}
+} /*20150717新增*/
+@media only screen and (min-width :1024px){
+		html{font-size:10px;}
+}
+@media only screen and (min-width :1280px){
+		html{font-size:13.5px;}
+}
+@media only screen and (min-width :1300px){
+		html{font-size:14px;}
+		.main_t{width:90%;margin:1rem auto 1rem auto;}
+}
+@media only screen and (min-width :1800px){
+		html{font-size:18px;}
+		.main_t{width:90%;margin:1rem auto 3rem auto;}
+}

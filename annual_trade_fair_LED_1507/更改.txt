@@ -1,0 +1,17 @@
+style.css
+@media only screen and (max-width :900px){
+		html{font-size:6px;}
+		body{background:url(../images/bg2.png) left top no-repeat;background-size:100%;}
+		.main_t .leftSection, .main_t .rightSection{min-height:13rem;}
+		.main_t .rightSection .rightTitle{font-size:2.8rem;}
+		.main_t .rightSection .volume{line-height:4rem;}
+		.main_t .leftSection .volume{margin:2rem 0 2rem 1.5rem;}
+		.main_t .leftSection .volume span{width:2.2rem;height:3.5rem;line-height:3.5rem;}
+		.main_t .leftSection .leftTitle{width:60%;height:4rem;line-height:4rem;}
+		.main_t .leftSection .leftTitle:after{content:"";position:absolute;bottom:0px;right:-2rem;border:2rem solid #df061a;border-left:0.6rem solid #df061a;border-right:1.6rem solid transparent;}
+		.deal .data{height:19rem;}
+		.deal .data p{line-height:2.4rem;}
+		.congratulation{background:url(../images/congratulation_bg.png) 20% center no-repeat #f3f6f8;background-size:79rem 21rem;border-top:0.8rem solid #d0d9eb;border-bottom:0.8rem solid #d0d9eb;position:relative;}
+		.congratulation .amount{left:62%;bottom:3.5rem;}
+		.congratulation .amount h1{font-size: 11rem;}
+} /*20150717ÐÂÔö*/
