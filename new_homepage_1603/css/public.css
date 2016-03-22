@@ -1,0 +1,38 @@
+/* ------------------------------------全局定义---------------------------------------- */
+body{ color:#333;background:#f0f8fb; font:12px/22px Verdana,Arial,sans-serif,"Times New Roman",宋体; text-align:left;}
+body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div,tr{ margin:0; padding:0;}
+input,select,textarea{font-size:12px; vertical-align:middle;}
+body div{text-align:left;}
+textarea,input{ word-wrap:break-word; word-break:break-all; padding:0px;}
+li{list-style-type: none;}
+img{ border:0 none;}
+a:link{color:#666;text-decoration:none;}
+a:hover{color:#666;text-decoration:underline;}
+a:visited{color:#666;text-decoration:none;}
+/* 去掉链接的虚线框 */
+a{outline:none;star:expression(this.onFocus=this.blur()); text-decoration:none;}
+/* ------------------------------------通用属性定义---------------------------------------- */
+/* 鼠标样式 */
+.pointer{ cursor:pointer;}
+/* 取消边框 */
+.noBorder{ border:0 none;}
+/* 文本对齐方式 */
+.t_l{text-align:left;}
+.t_c{text-align:center;}
+.t_r{text-align:right;}
+/* 字母和单词换行设置，强制内容换行，强制内容不换行 */
+.break{ word-break:break-all; word-wrap:break-word;}
+.nobreak{ word-break:keep-all; word-wrap:normal;}
+/* 浮动定义 */
+.fl{ float:left;}
+.fr{ float:right;}
+.pr{position:relative;}
+.pa{position:absolute;}
+.hidden{ display:none;}
+.cf:before, .cf:after {content: " "; display: table;}
+.cf:after { clear: both; }
+.cf{*zoom: 1; }
+/* 圆角5px */
+.radius5px{border-radius:5px;-webkit-border-radius:5px;-moz-border-radius:5px;-o-border-radius:5px;}
+/*超出省略……*/
+.ellipsis{overflow:hidden; white-space:nowrap;text-overflow:ellipsis;}
